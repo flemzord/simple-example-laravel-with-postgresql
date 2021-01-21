@@ -6,6 +6,9 @@ databases:
 - type: postgresql
   version: "12"
   name: my-db
+- type: redis
+  version: 6
+  name: my-redis
 routers:
 - name: main
   routes:
