@@ -1,0 +1,14 @@
+application:
+  name: laravel-postgresql
+  project: simple-example-laravel-with-postgresql
+  organization: QoveryCommunity
+databases:
+- type: postgresql
+  version: "12"
+  name: my-db
+routers:
+- name: main
+  routes:
+  - application_name: laravel-postgresql
+    paths:
+    - /
