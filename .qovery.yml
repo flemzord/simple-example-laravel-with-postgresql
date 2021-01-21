@@ -2,16 +2,17 @@ application:
   name: laravel-postgresql
   project: simple-example-laravel-with-postgresql
   organization: QoveryCommunity
+  publicly_accessible: true
 databases:
-- type: postgresql
-  version: "12"
-  name: my-db
-- type: redis
-  version: 6
-  name: my-redis
+  - type: postgresql
+    version: "12"
+    name: my-db
+  - type: redis
+    version: 6
+    name: my-redis
 routers:
-- name: main
-  routes:
-  - application_name: laravel-postgresql
-    paths:
-    - /
+  - name: main
+    routes:
+      - application_name: laravel-postgresql
+        paths:
+        - /
